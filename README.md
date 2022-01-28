@@ -1,5 +1,5 @@
 1.	git show aefea
-commit aefead2207ef7e2aa5dc81a34aedf0cad4c32545
+<p>commit aefead2207ef7e2aa5dc81a34aedf0cad4c32545</p>
 Update CHANGELOG.md
 
 2.	git show 85024d3
