@@ -3,14 +3,14 @@
 Update CHANGELOG.md
 
 2.	git show 85024d3
-tag: v0.12.23 - commit 85024d3100126de36331c6982bfaac02cdab9e76
+<p>tag: v0.12.23 - commit 85024d3100126de36331c6982bfaac02cdab9e76</p>
 
 3.	git show -s --format=%p b8d720
-56cd7859e 9ea88f22f
+<p>56cd7859e 9ea88f22f</p>
 или, полный кэш коммитов
-	git show --pretty=format:' %P' b8d720
+	<p>git show --pretty=format:' %P' b8d720</p>
 56cd7859e05c36c06b56d013b55a252d0bb7e158 
-9ea88f22fc6269854151c571162c5bcf958bee2b
+<p>9ea88f22fc6269854151c571162c5bcf958bee2b</p>
 
 4.	git log  v0.12.23..v0.12.24  --oneline
 33ff1c03b (tag: v0.12.24) v0.12.24
