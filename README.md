@@ -13,29 +13,29 @@ Update CHANGELOG.md
 <p>9ea88f22fc6269854151c571162c5bcf958bee2b</p>
 
 4.	git log  v0.12.23..v0.12.24  --oneline
-33ff1c03b (tag: v0.12.24) v0.12.24
-b14b74c49 [Website] vmc provider links
-3f235065b Update CHANGELOG.md
-6ae64e247 registry: Fix panic when server is unreachable
-5c619ca1b website: Remove links to the getting started guide's old location
-06275647e Update CHANGELOG.md
-d5f9411f5 command: Fix bug when using terraform login on Windows
-4b6d06cc5 Update CHANGELOG.md
-dd01a3507 Update CHANGELOG.md
-225466bc3 Cleanup after v0.12.23 release
+<p>33ff1c03b (tag: v0.12.24) v0.12.24
+<p>b14b74c49 [Website] vmc provider links
+<p>3f235065b Update CHANGELOG.md
+<p>6ae64e247 registry: Fix panic when server is unreachable
+<p>5c619ca1b website: Remove links to the getting started guide's old location
+<p>06275647e Update CHANGELOG.md
+<p>d5f9411f5 command: Fix bug when using terraform login on Windows
+<p>4b6d06cc5 Update CHANGELOG.md
+<p>dd01a3507 Update CHANGELOG.md
+<p>225466bc3 Cleanup after v0.12.23 release
 
 5.	git log -S 'func providerSource(' --oneline
-8c928e835 main: Consult local directories as potential mirrors of providers
+<p>8c928e835 main: Consult local directories as potential mirrors of providers
 
 6.	git grep 'func globalPluginDirs'
-plugins.go:func globalPluginDirs() []string {
+<p>plugins.go:func globalPluginDirs() []string {
 	git log -L 'func globalPluginDirs':plugins.go --oneline
-78b122055 Remove config.go and update things using its aliases
-52dbf9483 keep .terraform.d/plugins for discovery
-41ab0aef7 Add missing OS_ARCH dir to global plugin paths
-66ebff90c move some more plugin search path logic to command
-8364383c3 Push plugin discovery down into command package
+<p>78b122055 Remove config.go and update things using its aliases
+<p>52dbf9483 keep .terraform.d/plugins for discovery
+<p>41ab0aef7 Add missing OS_ARCH dir to global plugin paths
+<p>66ebff90c move some more plugin search path logic to command
+<p>8364383c3 Push plugin discovery down into command package
 
 7.	git log -S 'synchronizedWriters' --oneline
-	git show 5ac311e2a
-Author: Martin Atkins <mart@degeneration.co.uk>
+	<p>git show 5ac311e2a
+<p>Author: Martin Atkins <mart@degeneration.co.uk>
