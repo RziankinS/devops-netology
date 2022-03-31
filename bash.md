@@ -35,13 +35,13 @@ done
 ```bash
 while ((1==1)) 
 do 
-  curl https://localhost:4757
-  if (($? != 0))
-  then 
-   date > curl.log
-  else
- break
- fi
+	curl https://localhost:4757
+	if (($? != 0))
+	then 
+   		date > curl.log
+  	else
+ 	break
+ 	fi
 done
 
 добавим недостающую скобку в примере while ((1==1)), изменим запись в curl.log, чтобы каждая новая запись перезаписывала предыдущую, добавть уловие else, завершаюшее скрипт
@@ -57,12 +57,12 @@ hosts=(192.168.0.1 173.194.222.113 87.250.250.24)
 timeout=5
 for i in {1..5}
 do
-date >>check.log
-for h in ${hosts[@]}
-do
-curl -Is --connect-timeout $timeout $h:80 >/dev/null
-echo "check" $h status=$? >>check.log
- done
+	date >>check.log
+	for h in ${hosts[@]}
+	do
+	  curl -Is --connect-timeout $timeout $h:80 >/dev/null
+	  echo "check" $h status=$? >>check.log
+  	done
 done
 ```
 
@@ -77,15 +77,15 @@ timeout=5
 err=0
 while (($err == 0))
 do
-for h in ${hosts[@]}
-do
-curl -Is --connect-timeout $timeout $h:80 >/dev/null
-err=$?
-if (($err != 0))
-then
-echo "error" $h status=$err > temp.log
-fi
- done
+     for h in ${hosts[@]}
+	do
+	curl -Is --connect-timeout $timeout $h:80 >/dev/null
+	err=$?
+	if (($err != 0))
+	then
+	  echo "error" $h status=$err > temp.log
+	fi
+ 	done
 done
 ```
 
